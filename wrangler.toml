@@ -1,0 +1,8 @@
+# Cloudflare Workers Static Assets 配置
+# 纯静态单文件站点，无需 Worker 脚本；wrangler 只读 public/ 下的静态文件直接托管。
+# 注意：name 需与你在 Cloudflare 里那个项目的名字一致（不一致时把下面这行改成你的项目名）。
+name = "shijian-persona"
+compatibility_date = "2026-09-12"
+
+[assets]
+directory = "./public"
